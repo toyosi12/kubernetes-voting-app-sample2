@@ -8,10 +8,11 @@ metadata:
 spec:
     replicas: 1
     selector:
-        name: postgres-pod
-        labels:
+        matchLabels:
             name: postgres-pod
-            app: demo-voting-app
+            labels:
+                name: postgres-pod
+                app: demo-voting-app
     template:
         metadata:
             name: postgres-pod
