@@ -4,7 +4,7 @@ metadata:
     name: voting-service
     labels:
         name: voting-service
-        app: sample-voting-app
+        app: demo-voting-app
 spec:
     type: LoadBalancer
     ports:
@@ -12,4 +12,4 @@ spec:
         targetPort: 80
     selector:
         name: voting-app
-        app: sample-voting-app
+        app: demo-voting-app
